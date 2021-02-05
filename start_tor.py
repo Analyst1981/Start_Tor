@@ -34,10 +34,7 @@ print(term.format(query("https://www.atagar.com/echo.php"), term.Color.BLUE))
 
 tor_process.kill()  # stops tor
 
-
 """
-
-
 class StartTor(object):
     def __init__(self):
         if(os.name=="nt"):
@@ -53,8 +50,7 @@ class StartTor(object):
             print(tor_proxy)
             proxies.append(tor_proxy)
         print('SHODAN WORKING END---') 
-        return proxies  
-    
+        return proxies    
     @property
     def start_tor(self):
         print("[{d}]- 启动TOR -".format(d=datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))  
